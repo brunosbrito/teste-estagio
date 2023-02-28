@@ -91,7 +91,7 @@ for (let state in BILLING_PER_STATE) {
   const STATE_BILLING = BILLING_PER_STATE[state];
   const PERCENTAGES = (STATE_BILLING / TOTAL_VALUES).toFixed(2) * 100;
 
-  PERCENTAGES_BY_STATE[state] = ` ${PERCENTAGES}% `; 
+  PERCENTAGES_BY_STATE[state] = `${PERCENTAGES}%`; 
 }
 
 console.log(PERCENTAGES_BY_STATE);
@@ -101,9 +101,9 @@ console.log(PERCENTAGES_BY_STATE);
 function reverseString(str) {
 
   let newString = '';
-  const STRING_LENGTH = str.length;
+  const STRING_LENGTH = str.length -1 ;
 
-  for (let i = STRING_LENGTH - 1; i >= 0; i--) {
+  for (let i = STRING_LENGTH; i >= 0; i--) {
     newString += str[i];
   }
   return newString;
