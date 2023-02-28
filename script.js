@@ -1,21 +1,21 @@
 // questão número 2
 
-const ENTRADA_1 = 5
+const NUMBER = 13
 
 let num1 = 1;
 let num2 = 1;
 let num3;
 
-while (num2 < ENTRADA_1) {
+while (num2 < NUMBER) {
   num3 = num1 + num2;
   num1 = num2;
   num2 = num3;
 }
 
-if (num2 === ENTRADA_1) {
-  console.log(ENTRADA_1 + " pertence à sequência de Fibonacci.");
+if (num2 === NUMBER) {
+  console.log(NUMBER + " pertence à sequência de Fibonacci.");
 } else {
-  console.log(ENTRADA_1 + " não pertence à sequência de Fibonacci.");
+  console.log(NUMBER + " não pertence à sequência de Fibonacci.");
 }
 
 
